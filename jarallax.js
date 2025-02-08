@@ -1031,3 +1031,16 @@ plugin.constructor = Jarallax;
 
 /***/ })
 /******/ ]);
+
+// Отключаем параллакс на мобильных
+if (window.innerWidth < 768) {
+  jarallax(document.querySelectorAll('.jarallax'), {
+    disableParallax: true
+  });
+}
+
+// Мобильное меню
+document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.desktop-menu').classList.toggle('active');
+});
