@@ -1,3 +1,89 @@
+/* Добавить в начало */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Десктопное меню */
+.desktop-menu {
+  display: flex;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Мобильное меню */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .desktop-menu.active {
+    display: flex;
+  }
+}
+.main-section {
+  padding: 40px 0;
+}
+
+.hero-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-text {
+  width: 100% !important;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+
+
 :root{--background: #FFEEE6; --background-dark: #50250E; --dominant-color: #FB5607; --dominant-dark-color: #613029; --dominant-darken-color: #C01C00; --dominant-light-color: #D5C0B1; --dominant-lighten-color: #FF893F; --primary-color: #FFBE0B; --primary-dark-color: #522612; --primary-darken-color: #C78E00; --primary-light-color: #E5E0C8; --primary-lighten-color: #FFF051; --secondary-color: #8338EC; --secondary-dark-color: #3F3762; --secondary-darken-color: #4A00B8; --secondary-light-color: #E2D1E3; --secondary-lighten-color: #B969FF; --success-color: #22B571; --success-dark-color: #1F421F; --success-darken-color: #008445; --success-light-color: #D1E9DA; --success-lighten-color: #63E8A0; --danger-color: #B7202E; --danger-dark-color: #5C2C25; --danger-darken-color: #800006; --danger-light-color: #DEC2C0; --danger-lighten-color: #EF5857; --warning-color: #D7A100; --warning-dark-color: #51270C; --warning-darken-color: #A17300; --warning-light-color: #E8E2CA; --warning-lighten-color: #FFD247; --info-color: #0BACCC; --info-dark-color: #043E5A; --info-darken-color: #007C9B; --info-light-color: #CEEDED; --info-lighten-color: #61DEFF; --background-text: #000000; --background-dark-text: #FFFFFF; --dominant-text: #FFFFFF; --dominant-dark-text: #FFFFFF; --dominant-darken-text: #FFFFFF; --dominant-light-text: #000000; --dominant-lighten-text: #000000; --primary-text: #000000; --primary-dark-text: #FFFFFF; --primary-darken-text: #000000; --primary-light-text: #000000; --primary-lighten-text: #000000; --secondary-text: #FFFFFF; --secondary-dark-text: #FFFFFF; --secondary-darken-text: #FFFFFF; --secondary-light-text: #000000; --secondary-lighten-text: #000000; --success-text: #FFFFFF; --success-dark-text: #FFFFFF; --success-darken-text: #FFFFFF; --success-light-text: #000000; --success-lighten-text: #000000; --danger-text: #FFFFFF; --danger-dark-text: #FFFFFF; --danger-darken-text: #FFFFFF; --danger-light-text: #000000; --danger-lighten-text: #FFFFFF; --warning-text: #000000; --warning-dark-text: #FFFFFF; --warning-darken-text: #FFFFFF; --warning-light-text: #000000; --warning-lighten-text: #000000; --info-text: #FFFFFF; --info-dark-text: #FFFFFF; --info-darken-text: #FFFFFF; --info-light-text: #000000; --info-lighten-text: #000000;  --display1-font: 'Golos Text', sans-serif; --display2-font: 'Golos Text', sans-serif; --display4-font: 'Golos Text', sans-serif; --display5-font: 'Golos Text', sans-serif; --display7-font: 'Golos Text', sans-serif;}
 body {
   font-family: Arial, sans-serif;
