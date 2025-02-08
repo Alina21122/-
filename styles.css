@@ -1,54 +1,5 @@
 :root{--background: #FFEEE6; --background-dark: #50250E; --dominant-color: #FB5607; --dominant-dark-color: #613029; --dominant-darken-color: #C01C00; --dominant-light-color: #D5C0B1; --dominant-lighten-color: #FF893F; --primary-color: #FFBE0B; --primary-dark-color: #522612; --primary-darken-color: #C78E00; --primary-light-color: #E5E0C8; --primary-lighten-color: #FFF051; --secondary-color: #8338EC; --secondary-dark-color: #3F3762; --secondary-darken-color: #4A00B8; --secondary-light-color: #E2D1E3; --secondary-lighten-color: #B969FF; --success-color: #22B571; --success-dark-color: #1F421F; --success-darken-color: #008445; --success-light-color: #D1E9DA; --success-lighten-color: #63E8A0; --danger-color: #B7202E; --danger-dark-color: #5C2C25; --danger-darken-color: #800006; --danger-light-color: #DEC2C0; --danger-lighten-color: #EF5857; --warning-color: #D7A100; --warning-dark-color: #51270C; --warning-darken-color: #A17300; --warning-light-color: #E8E2CA; --warning-lighten-color: #FFD247; --info-color: #0BACCC; --info-dark-color: #043E5A; --info-darken-color: #007C9B; --info-light-color: #CEEDED; --info-lighten-color: #61DEFF; --background-text: #000000; --background-dark-text: #FFFFFF; --dominant-text: #FFFFFF; --dominant-dark-text: #FFFFFF; --dominant-darken-text: #FFFFFF; --dominant-light-text: #000000; --dominant-lighten-text: #000000; --primary-text: #000000; --primary-dark-text: #FFFFFF; --primary-darken-text: #000000; --primary-light-text: #000000; --primary-lighten-text: #000000; --secondary-text: #FFFFFF; --secondary-dark-text: #FFFFFF; --secondary-darken-text: #FFFFFF; --secondary-light-text: #000000; --secondary-lighten-text: #000000; --success-text: #FFFFFF; --success-dark-text: #FFFFFF; --success-darken-text: #FFFFFF; --success-light-text: #000000; --success-lighten-text: #000000; --danger-text: #FFFFFF; --danger-dark-text: #FFFFFF; --danger-darken-text: #FFFFFF; --danger-light-text: #000000; --danger-lighten-text: #FFFFFF; --warning-text: #000000; --warning-dark-text: #FFFFFF; --warning-darken-text: #FFFFFF; --warning-light-text: #000000; --warning-lighten-text: #000000; --info-text: #FFFFFF; --info-dark-text: #FFFFFF; --info-darken-text: #FFFFFF; --info-light-text: #000000; --info-lighten-text: #000000;  --display1-font: 'Golos Text', sans-serif; --display2-font: 'Golos Text', sans-serif; --display4-font: 'Golos Text', sans-serif; --display5-font: 'Golos Text', sans-serif; --display7-font: 'Golos Text', sans-serif;}
-body {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    overflow-x: hidden; /* Запрет горизонтального скролла */
-}
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-.block {
-    width: 100%; /* Было 350px */
-    margin: 15px 0;
-    padding: 20px;
-    box-sizing: border-box;
-}
-/* Мобильная версия */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        display: none; /* Скрываем обычное меню */
-    }
-
-    .menu-icon {
-        display: block; /* Показываем гамбургер */
-        font-size: 24px;
-        margin: 10px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        line-height: 1.3;
-    }
-
-    .block {
-        margin: 10px 0;
-        padding: 15px;
-    }
-}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
