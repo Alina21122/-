@@ -207,6 +207,13 @@
   <script src="scripti.js"></script>
   <script src="formoid.min.js"></script>
   <script src="preview.js"></script>
- 
+
+<script>
+  document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('nav ul').style.display = 
+        document.querySelector('nav ul').style.display === 'flex' ? 'none' : 'flex';
+});
+</script>
+  
 </body>
 </html>
